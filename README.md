@@ -107,5 +107,60 @@ This project is **open-source**! Feel free to fork, improve, and submit PRs.
 
 💬 **For questions or collaborations, reach out!**
 
-🚀 **Let’s keep coding competitions fair!** 🔥
+🚀 **Let's keep coding competitions fair!** 🔥
+
+# LeetCode Anti-Cheat Extension
+
+A Chrome extension that helps detect potential cheating during LeetCode contests and MAANG interviews by monitoring suspicious activities.
+
+## Features
+
+- Monitors for suspicious activities during LeetCode contests and interviews:
+  - Multiple tabs/windows open
+  - Copy-paste operations
+  - Switching between applications
+  - Unusual typing patterns
+  - Multiple submissions in short time intervals
+- Real-time notifications for suspicious activities
+- Activity log with timestamps
+- Easy-to-use popup interface
+
+## Installation
+
+1. Clone this repository or download the files
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable "Developer mode" in the top right
+4. Click "Load unpacked" and select the extension directory
+
+## Usage
+
+1. Click the extension icon in your Chrome toolbar to open the popup
+2. Click "Start Monitoring" to begin monitoring for suspicious activities
+3. The extension will automatically detect when you're in a LeetCode contest or interview
+4. Suspicious activities will be logged and displayed in the popup
+5. Click "Stop Monitoring" to stop the monitoring
+
+## Privacy
+
+This extension:
+- Only monitors activities on LeetCode domains
+- Stores all data locally in your browser
+- Does not send any data to external servers
+- Can be easily disabled or removed
+
+## Development
+
+The extension consists of:
+- `manifest.json`: Extension configuration
+- `background.js`: Background monitoring service
+- `content.js`: Page interaction monitoring
+- `popup.html` & `popup.js`: User interface
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+MIT License
 

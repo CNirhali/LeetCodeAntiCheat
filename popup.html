@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LeetCode Anti-Cheat</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .status {
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .active {
+      background-color: #e6ffe6;
+      color: #006600;
+    }
+    .inactive {
+      background-color: #ffe6e6;
+      color: #660000;
+    }
+    .activity-list {
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .activity-item {
+      margin-bottom: 8px;
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .timestamp {
+      font-size: 0.8em;
+      color: #666;
+    }
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>LeetCode Anti-Cheat</h2>
+    <div id="status" class="status inactive">Monitoring Inactive</div>
+    <button id="toggleMonitoring">Start Monitoring</button>
+    <div class="activity-list" id="activityList">
+      <h3>Suspicious Activities</h3>
+      <div id="activities"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
